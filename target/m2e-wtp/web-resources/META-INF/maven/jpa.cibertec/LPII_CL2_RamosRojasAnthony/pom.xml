@@ -93,6 +93,17 @@ mvnrepository.com/artifact/com.smartnews/maven-jpa-entity-generator-plugin/0.99.
     <version>5.1.1</version>
 </dependency>
 
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+<dependency>
+    <groupId>taglibs</groupId>
+    <artifactId>standard</artifactId>
+    <version>1.1.2</version>
+</dependency>
+
 <!-- mvnrepository.com/artifact/jstl/jstl -->
 
 <dependency>
