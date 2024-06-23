@@ -10,8 +10,8 @@ public class TestEntidadUsuario {
 		TblUsuariocl2 usuario = new TblUsuariocl2();
 		ClassUsuarioImp crud = new ClassUsuarioImp();
 		
-		usuario.setUsuariocl2("ruth123");
-		usuario.setPasswordcl2("123456");
+		usuario.setUsuariocl2("nnn123");
+		usuario.setPasswordcl2("ghrtdhgdrt");
 		crud.RegistrarUsuario(usuario);
 
 	}

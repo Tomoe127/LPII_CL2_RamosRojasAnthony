@@ -36,7 +36,7 @@ public class ControladorProducto extends HttpServlet {
 		List<TblProductocl2> listadoproducto = crud.ListadoProducto();
 		
 		request.setAttribute("listadodeproductos", listadoproducto);
-		request.getRequestDispatcher("/RegistroProducto.jsp").forward(request, response);
+		request.getRequestDispatcher("/ListadoProductos.jsp").forward(request, response);
 	}
 
 	/**

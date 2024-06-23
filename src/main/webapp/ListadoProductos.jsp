@@ -1,3 +1,4 @@
+<%@page import="Dao.ClassProductoImp"%>
 <%@page import="model.TblProductocl2"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -15,7 +16,8 @@
 <body bgcolor="#c5dec9">
 <h1 align="center">Listado de Productos Registrados en BD</h1>
 
-<button><a></a>Registrar Producto</button>
+<a href="RegistroProducto.jsp"><button>Registrar Producto</button></a>
+<%ClassProductoImp crud=new ClassProductoImp(); %>
 
 <table border="2" align="center">
 <tr>
@@ -28,7 +30,7 @@
 </tr>
 
 <%
-	List<TblProductocl2> listadoproducto = (List<TblProductocl2>)request.getAttribute("listadodeproductos");
+	List<TblProductocl2> listadoproducto =crud.ListadoProducto();
 	if(listadoproducto!=null){
 		for(TblProductocl2 lis:listadoproducto){
 			%>
@@ -42,12 +44,13 @@
 			</tr>
 		<% 	
 		}
-		%>
-	<% 
+		
 	}
 %>
 
 </table>
+
+
 
 </body>
 </html>

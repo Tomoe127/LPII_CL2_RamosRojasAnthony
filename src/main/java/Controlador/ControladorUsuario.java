@@ -56,8 +56,8 @@ public class ControladorUsuario extends HttpServlet {
 	      } 
 		}
 		
-		 if (credencial = true) {
-	            response.sendRedirect("ListadoProductos.jsp");
+		 if (credencial == true) {
+	            response.sendRedirect("index.jsp");
 	        } else {
 	            response.sendRedirect("login.jsp?error=1");
 	        }
